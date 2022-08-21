@@ -1,0 +1,32 @@
+@import url(styles/cabecalho.css);
+@import url(styles/principal.css);
+
+:root {
+    --azul-fundo: #051D3B;
+    --fundo-formulario: rgba(255, 255, 255, 0.16);
+    --fundo-menu: #2D415B;
+    --azul-escuro: #3D3D3D;
+    --azul1: #5081FB;
+    --azul2: #7BA4FC;
+    --azul-claro: #96B9FD;
+    --branco: #FFFFFF;
+    --fundo-editor: #141414;
+    --azul-editor: #6BD1FF;
+    --rosa-editor: #FF6BCD;
+    --laranja-editor: #FFC46B;
+    --verde-editor: #9AFF6B;
+    --azul-escuro-editor: #6B83FF;
+    --azul-botao: #5081FB14;
+    --roboto-mono: 'Roboto Mono', monospace;
+    --inter: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--azul-fundo);
+    color: var(--branco);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 16px;
+}
+

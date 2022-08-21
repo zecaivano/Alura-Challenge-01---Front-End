@@ -1,0 +1,119 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__busca {
+    display: none;
+}
+.header__busca-icone {
+    margin-right: 16px;
+}
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/menu-hamburguer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked ~.container__rotulo {
+    background: var(--fundo-menu);
+}
+
+.lista-menu {
+    background-color: var(--fundo-menu);
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 10%;/*O top funciona bem em elementos absolutos, com o valor de 100% ele não vai em cima do elemento anterior. */
+    left:45%;
+    width: 50vw;
+    height: 80vh;
+    padding: 24px;
+}
+.container__botao {
+    display: none;
+}
+.container__botao:checked~.lista-menu { /* O ~ é um combinador CSS, que procura um elemento com a classe informada. Quase um condicional */
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    background-color: var(--fundo-menu);
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--branco);
+}
+.header__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__imagem, .container__comunidade, .header__container-direita {
+    display: flex;
+    text-align: center;
+}
+.container__imagem-menu {
+    margin-right: 16px;
+}
+.border {
+    border-bottom: 1px solid var(--branco);
+    opacity: 8%;
+}
+.header__foto {
+    margin: 16px 8px;
+}
+@media screen and (min-width: 750px) {
+    .body {
+        margin: 32px;
+    }
+    .header__container{
+        margin: 32px 32px 0 32px;
+    }
+    .header__busca {
+        width: 50%;
+        display: block;
+        background-color: var(--fundo-formulario);
+        color: var(--branco);
+        border-radius: 8px;
+        padding: 14px;
+    }
+
+    .header__busca::placeholder {
+        color: var(--branco);
+        opacity: 0.64;
+        font-family: var(--inter);
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .header__busca-icone{
+        display: none;
+    }
+    .lista-menu {
+        left: 70%;
+        width: 25vw;
+        height: 80vh;
+        padding: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container__menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .container__perfil {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 16px;
+    }
+}
+
