@@ -1,5 +1,6 @@
 @import url(styles/cabecalho.css);
 @import url(styles/principal.css);
+@import url(styles/comunidade.css);
 
 :root {
     --azul-fundo: #051D3B;

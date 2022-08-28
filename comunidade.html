@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Design Mobile e Tablet -->
+    <div class="mobile-tablet">
+        <header class="header__container">
+            <img src="img/Logo.svg" alt="Logo Alura Dev" class="header__logo">
+            <input type="text" placeholder="Busque por algo" class="header__busca">
+            <div class="header__mobile">
+                <img src="img/busca.svg" alt="Campo de busca" class="header__busca-icone">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo"> <!-- o for associa o label com o id menu-->
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="./index.html" class="lista-menu__link">
+                            <div class="container__imagem">
+                                <img src="img/editor.png" alt="Editor de código" class="container__imagem-menu">
+                                <p>Editor de código</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="./comunidade.html" class="lista-menu__link">                
+                            <div class="container__comunidade">
+                                <img src="img/comunidade.png" alt="Comunidade" class="container__imagem-menu">
+                                <p>Comunidade</p>
+                            </div>
+                        </a>
+                    </li>
+                    <p class="border"></p>
+                    <div class="header__container-direita">
+                        <img src="img/Photo.png" alt="Foto do perfil" class="header__foto">
+                        <p>Harry</p>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <section class="main">
+            <div class="main__meio">
+                <!-- Projeto 1 -->
+                <div class="codigo-padrao codigo-azul-escuro">
+                    <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                    <textarea cols="30" rows="15" class="codigo__campo"> JavaScript</textarea>
+                </div>
+                <h2 class="projeto">Projeto 1</h2>
+                <p class="projeto__comunidade">Código feito em javascript</p>
+                <div class="container__projeto">
+                    <div class="projeto__likes">
+                        <div class="container-interacoes">
+                            <img src="img/comentario.svg" alt="comentarios">
+                            <p class="contagem">9</p>
+                        </div>
+                        <div class="container-interacoes">
+                            <img src="img/like.svg" alt="curtidas">
+                            <p class="contagem">10</p>
+                        </div>
+                    </div>
+                    <div class="container__perfil-comunidade">
+                        <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                        <p class="perfil">Harry</p>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="codigo-padrao codigo-rosa">
+                    <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                    <textarea cols="30" rows="15" class="codigo__campo"> C++</textarea>
+                </div>
+                <h2 class="projeto">Projeto 2</h2>
+                <p class="projeto__comunidade">Código feito em C++</p>
+                <div class="container__projeto">
+                    <div class="projeto__likes">
+                        <div class="container-interacoes">
+                            <img src="img/comentario.svg" alt="comentarios">
+                            <p class="contagem">9</p>
+                        </div>
+                        <div class="container-interacoes">
+                            <img src="img/like.svg" alt="curtidas">
+                            <p class="contagem">10</p>
+                        </div>
+                    </div>
+                    <div class="container__perfil-comunidade">
+                        <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                        <p class="perfil">Harry</p>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="codigo-padrao codigo-verde">
+                    <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                    <textarea cols="30" rows="15" class="codigo__campo"> PHP</textarea>
+                </div>
+                <h2 class="projeto">Projeto 3</h2>
+                <p class="projeto__comunidade">Código feito em PHP</p>
+                <div class="container__projeto">
+                    <div class="projeto__likes">
+                        <div class="container-interacoes">
+                            <img src="img/comentario.svg" alt="comentarios">
+                            <p class="contagem">9</p>
+                        </div>
+                        <div class="container-interacoes">
+                            <img src="img/like.svg" alt="curtidas">
+                            <p class="contagem">10</p>
+                        </div>
+                    </div>
+                    <div class="container__perfil-comunidade">
+                        <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                        <p class="perfil">Harry</p>
+                    </div>
+                </div>
+                <!-- Projeto 4 -->
+                <div class="codigo-padrao codigo-laranja">
+                    <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                    <textarea cols="30" rows="15" class="codigo__campo"> Java</textarea>
+                </div>
+                <h2 class="projeto">Projeto 4</h2>
+                <p class="projeto__comunidade">Código feito em Java</p>
+                <div class="container__projeto">
+                    <div class="projeto__likes">
+                        <div class="container-interacoes">
+                            <img src="img/comentario.svg" alt="comentarios">
+                            <p class="contagem">9</p>
+                        </div>
+                        <div class="container-interacoes">
+                            <img src="img/like.svg" alt="curtidas">
+                            <p class="contagem">10</p>
+                        </div>
+                    </div>
+                    <div class="container__perfil-comunidade">
+                        <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                        <p class="perfil">Harry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Design exclusivo desktop -->
+    <div class="desktop">
+        <div class="container__esquerda">
+            <img src="img/Logo.svg" alt="Logo Alura Dev" class="header__logo">
+            <nav class="container__menu">
+                MENU
+                <a href="./index.html" class="lista-menu__link">
+                    <div class="container__imagem">
+                        <img src="img/editor.png" alt="Editor de código" class="container__imagem-menu">
+                        Editor de código
+                    </div>
+                </a>
+                <a href="./comunidade.html" class="lista-menu__link">
+                    <div class="container__comunidade">
+                        <img src="img/comunidade.png" alt="Comunidade" class="container__imagem-menu">
+                        Comunidade
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <div class="container__centro container__centro-comunidade ">
+            <div class="cabecalho-desktop">
+                <input type="text" placeholder="Busque por algo" class="header__busca header__busca-comunidade">
+                <div class="container__perfil">
+                    <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                    <p class="perfil">Harry</p>
+                </div>
+            </div>
+            <div class="main__centro">
+                <!-- Projeto 1 -->
+                <div class="card-projeto">
+                    <div class="codigo-padrao codigo-azul-escuro">
+                        <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                        <textarea cols="60" rows="10" class="codigo__campo-desktop"> JavaScript</textarea>
+                    </div>
+                    <h2 class="projeto">Projeto 1</h2>
+                    <p class="projeto__comunidade">Código feito em javascript</p>
+                    <div class="container__projeto">
+                        <div class="projeto__likes">
+                            <div class="container-interacoes">
+                                <img src="img/comentario.svg" alt="comentarios">
+                                <p class="contagem">9</p>
+                            </div>
+                            <div class="container-interacoes">
+                                <img src="img/like.svg" alt="curtidas">
+                                <p class="contagem">10</p>
+                            </div>
+                        </div>
+                        <div class="container__perfil-comunidade">
+                            <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                            <p class="perfil">Harry</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Projeto 2 -->
+                <div class="card-projeto">
+                    <div class="codigo-padrao codigo-verde">
+                        <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                        <textarea cols="60" rows="10" class="codigo__campo-desktop"> Java</textarea>
+                    </div>
+                    <h2 class="projeto">Projeto 2</h2>
+                    <p class="projeto__comunidade">Código feito em Java</p>
+                    <div class="container__projeto">
+                        <div class="projeto__likes">
+                            <div class="container-interacoes">
+                                <img src="img/comentario.svg" alt="comentarios">
+                                <p class="contagem">21</p>
+                            </div>
+                            <div class="container-interacoes">
+                                <img src="img/like.svg" alt="curtidas">
+                                <p class="contagem">12</p>
+                            </div>
+                        </div>
+                        <div class="container__perfil-comunidade">
+                            <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                            <p class="perfil">Harry</p>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Projeto 3 -->
+                    <div class="card-projeto">
+                        <div class="codigo-padrao codigo-rosa">
+                            <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                            <textarea cols="60" rows="10" class="codigo__campo-desktop"> PHP</textarea>
+                        </div>
+                        <h2 class="projeto">Projeto 3</h2>
+                        <p class="projeto__comunidade">Código feito em PHP</p>
+                        <div class="container__projeto">
+                            <div class="projeto__likes">
+                                <div class="container-interacoes">
+                                    <img src="img/comentario.svg" alt="comentarios">
+                                    <p class="contagem">4</p>
+                                </div>
+                                <div class="container-interacoes">
+                                    <img src="img/like.svg" alt="curtidas">
+                                    <p class="contagem">15</p>
+                                </div>
+                            </div>
+                            <div class="container__perfil-comunidade">
+                                <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                                <p class="perfil">Harry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projeto 4 -->
+                    <div class="card-projeto">
+                        <div class="codigo-padrao codigo-laranja">
+                            <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
+                            <textarea cols="60" rows="10" class="codigo__campo-desktop"> C++</textarea>
+                        </div>
+                        <h2 class="projeto">Projeto 4</h2>
+                        <p class="projeto__comunidade">Código feito em C++</p>
+                        <div class="container__projeto">
+                            <div class="projeto__likes">
+                                <div class="container-interacoes">
+                                    <img src="img/comentario.svg" alt="comentarios">
+                                    <p class="contagem">25</p>
+                                </div>
+                                <div class="container-interacoes">
+                                    <img src="img/like.svg" alt="curtidas">
+                                    <p class="contagem">90</p>
+                                </div>
+                            </div>
+                            <div class="container__perfil-comunidade">
+                                <img src="img/Photo.png" alt="Foto do perfil" class="header__foto"> 
+                                <p class="perfil">Harry</p>
+                            </div>
+                        </div>
+                    </div>                    
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
