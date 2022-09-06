@@ -19,6 +19,12 @@
     display: inline-block;
 }
 
+.cabecalho__menu-hamburguer:hover {
+    background-image: url(../img/hamburguer-hover.svg);
+}
+.cabecalho__menu-hamburguer:active {
+    background-image: url(../img/hamburfuer-active.svg);
+}
 .container__botao:checked ~.container__rotulo {
     background: var(--fundo-menu);
 }
