@@ -163,6 +163,15 @@
 .p-comunidade {
     opacity: 56%;
 }
+
+.container__perfil:hover {
+    background-color: var(--branco-hover);
+    border-radius: 8px;
+}
+
+.projeto__nome:hover, .projeto__descricao:hover, .seleciona__linguagem:hover {
+    background-color: var(--branco-24) ;
+}
 @media screen and (min-width: 750px) {
     .codigo {
         margin-top: 40px;

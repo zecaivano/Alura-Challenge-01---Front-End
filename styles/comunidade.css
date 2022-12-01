@@ -56,7 +56,20 @@
 .codigo-azul-escuro {
     background-color: var(--azul-escuro-editor);
 }
-
+.container-interacoes:hover {
+    background-color: var(--branco-hover);
+    border-radius: 16px;
+}
+.container-interacoes:active {
+    background-color: var(--branco-active);
+}
+.container__perfil-comunidade:hover {
+    background-color: var(--branco-hover);
+    border-radius: 8px;
+}
+/* .card-projeto:hover ~.container__projeto {
+    display: flex;
+} */
 @media screen and (min-width: 1200px) {
     .container__centro-comunidade {
         width: 80%;
