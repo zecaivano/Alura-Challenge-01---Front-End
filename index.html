@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="highlight/styles/github-dark.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -53,7 +54,10 @@
             <div class="main__meio">
                 <div class="codigo">
                     <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                    <textarea cols="30" rows="20" class="codigo__campo"> Digite seu código aqui!</textarea>
+                    <div class="codigo-wrapper">
+                        <code class="preview hljs" contenteditable="true" id="codigo__campo" aria-label="Editor de código">function Teste(){}
+                        </code>
+                    </div>
                 </div>
                 <button class="botao-highlight">Visualizar com o highlight</button>
             </div>
@@ -64,12 +68,12 @@
             </section>
             <h3 class="personalizacao__h3 personalizacao__hide">Personalização</h3>
             <section class="personalizacao">
-                <select class="seleciona__linguagem">
-                    <option class="opcao">JavaScript</option>
-                    <option class="opcao">Python</option>
-                    <option class="opcao">Java</option>
-                    <option class="opcao">C++</option>
-                    <option class="opcao">PHP</option>
+                <select name="linguagem" id="linguagem" class="linguagem seleciona__linguagem">
+                    <option class="opcao" value="javascript">JavaScript</option>
+                    <option class="opcao" value="html">HTML</option>
+                    <option class="opcao" value="css">CSS</option>
+                    <option class="opcao" value="python">Python</option>
+                    <option class="opcao" value="java">Java</option>
                 </select>
                 <fieldset class="fieldset-cor">
                     <select class="seleciona__cor">
@@ -109,9 +113,12 @@
             <div class="main__meio">
                 <div class="codigo">
                     <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                    <textarea cols="90" rows="15" class="codigo__campo-desktop">Agora Sim!</textarea>
+                    <div class="codigo-wrapper-d codigo-wrapper">
+                        <code class="preview hljs" id="codigo__campo-desktop" contenteditable="true"> function Teste(){}
+                        </code>
+                    </div>
                 </div>
-                <button class="botao-highlight">Visualizar com o highlight</button>
+                <button class="botao-highlight-d botao-highlight">Visualizar com o highlight</button>
             </div>
         </div>
         <div class="container__direita">
@@ -127,12 +134,12 @@
                     <section class="personalizacao-desktop">
                         <h3 class="personalizacao__h3">Personalização</h3>
                         <fieldset class="fieldset">
-                            <select class="seleciona__linguagem">
-                                <option class="opcao">JavaScript</option>
-                                <option class="opcao">Python</option>
-                                <option class="opcao">Java</option>
-                                <option class="opcao">C++</option>
-                                <option class="opcao">PHP</option>
+                            <select name="linguagem" id="linguagem" class="linguagem-d linguagem seleciona__linguagem">
+                                <option class="opcao" value="javascript">JavaScript</option>
+                                <option class="opcao" value="html">HTML</option>
+                                <option class="opcao" value="css">CSS</option>
+                                <option class="opcao" value="python">Python</option>
+                                <option class="opcao" value="java">Java</option>
                             </select>
                         </fieldset>
                         <fieldset class="fieldset-cor">
@@ -150,6 +157,8 @@
             </section>
         </div>
     </div>
+<script src="/highlight/highlight.min.js"></script>
+<script src="./index.js"></script>
 </body>
 
 </html>

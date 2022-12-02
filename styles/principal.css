@@ -4,7 +4,7 @@
     background-color: var(--azul-editor);
     border-radius: 8px;
 }
-.codigo__campo {
+#codigo__campo {
     display: block;
     width: 92%;
     height: 50vh;
@@ -41,6 +41,7 @@
 }
 .botao-highlight:hover, .botao-highlight:active {
     background-color: var(--azul-botao2);
+    cursor: pointer;
 }
 
 .botao-highlight:active {
@@ -98,10 +99,12 @@
 }
 .opcao, .opcao:hover {
     background-color: var(--fundo-editor);
+    cursor: pointer;
 }
 
 .seleciona__linguagem:hover, .seleciona__linguagem:focus, .seleciona__linguagem:checked {
     background-color: var(--fundo-formulario);
+    cursor: pointer;
 }
 .personalizacao-desktop, .desktop {
     display: none;
@@ -154,6 +157,7 @@
     color: var(--branco);
     border-color: var(--branco);
     background-color: var(--azul2);
+    cursor: pointer;
 }
 
 .botao__salvar:focus, .botao__salvar-desktop:focus {
@@ -176,7 +180,7 @@
     .codigo {
         margin-top: 40px;
     }
-    .codigo__campo {
+    #codigo__campo, .preview {
         padding: 52px 2% 16px 2%;
         width: 96%;
         height: 30vh;
@@ -229,22 +233,25 @@
         display: flex;
         justify-content: space-between;
     }
-    .codigo__campo, .personalizacao {
+    #codigo__campo, .personalizacao {
         display: none;
     } 
     .header__busca {
         width: 750px;
         height: 28px;
     }
-    .codigo__campo-desktop {
+    #codigo__campo-desktop {
         display: block;
         width: 96%;
-        height: 30vh;
+        height: 50vh;
         background-color: var(--fundo-editor);
         color: var(--branco);
         border-radius: 8px;
         padding: 52px 2% 16px 2%;
         border-style: none;
+    }
+    .preview {
+        padding: 30px;
     }
     .personalizacao-desktop {
         display: block;

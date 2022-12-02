@@ -35,4 +35,14 @@ body {
     font-size: 16px;
     margin: 16px;
 }
-
+.codigo-wrapper {
+    height: 100%;
+}
+.preview {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    height: 60vh;
+    white-space: pre-wrap;
+}
