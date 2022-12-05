@@ -76,12 +76,12 @@
                     <option class="opcao" value="java">Java</option>
                 </select>
                 <fieldset class="fieldset-cor">
-                    <select class="seleciona__cor">
-                        <option class="opcao cor1"></option>
-                        <option class="opcao cor2"></option>
-                        <option class="opcao cor3"></option>
-                        <option class="opcao cor4"></option>
-                        <option class="opcao cor5"></option>
+                    <select name="seleciona__cor" class="seleciona__cor">
+                        <option class="opcao cor1" value="cor1"></option>
+                        <option class="opcao cor2" value="cor2"></option>
+                        <option class="opcao cor3" value="cor3"></option>
+                        <option class="opcao cor4" value="cor4"></option>
+                        <option class="opcao cor5" value="cor5"></option>
                     </select>
                 </fieldset>
             </section>
@@ -111,7 +111,7 @@
         <div class="container__centro">
             <input type="text" placeholder="Busque por algo" class="header__busca">
             <div class="main__meio">
-                <div class="codigo">
+                <div class="codigo codigo-d">
                     <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
                     <div class="codigo-wrapper-d codigo-wrapper">
                         <code class="preview hljs" id="codigo__campo-desktop" contenteditable="true"> function Teste(){}
@@ -143,12 +143,12 @@
                             </select>
                         </fieldset>
                         <fieldset class="fieldset-cor">
-                            <select class="seleciona__cor">
-                                <option class="opcao cor1"></option>
-                                <option class="opcao cor2"></option>
-                                <option class="opcao cor3"></option>
-                                <option class="opcao cor4"></option>
-                                <option class="opcao cor5"></option>
+                            <select name="seleciona__cor-d" class="seleciona__cor seleciona__cor-d">
+                                <option class="opcao cor1" value="cor1"></option>
+                                <option class="opcao cor2" value="cor2"></option>
+                                <option class="opcao cor3" value="cor3"></option>
+                                <option class="opcao cor4" value="cor4"></option>
+                                <option class="opcao cor5" value="cor5"></option>
                             </select>
                         </fieldset>
                         <button class="botao__salvar-desktop">Salvar projeto</button>
@@ -159,6 +159,7 @@
     </div>
 <script src="/highlight/highlight.min.js"></script>
 <script src="./index.js"></script>
+<script src="./cor.js"></script>
 </body>
 
 </html>

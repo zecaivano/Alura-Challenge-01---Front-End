@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="highlight/styles/github-dark.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -179,7 +180,11 @@
                 <div class="card-projeto">
                     <div class="codigo-padrao codigo-azul-escuro">
                         <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                        <textarea cols="60" rows="10" class="codigo__campo-desktop"> JavaScript</textarea>
+                        <!-- <textarea cols="60" rows="10" class="codigo__campo-desktop"> JavaScript</textarea> -->
+                        <div class="codigo-wrapper-d codigo-wrapper codigo-wrapper-d-comunidade">
+                            <pre><code class="preview hljs" id="codigo__campo-desktop">function Teste(){}
+                            </code></pre>
+                        </div>
                     </div>
                     <h2 class="projeto">Projeto 1</h2>
                     <p class="projeto__comunidade">Código feito em javascript</p>
@@ -204,7 +209,11 @@
                 <div class="card-projeto">
                     <div class="codigo-padrao codigo-verde">
                         <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                        <textarea cols="60" rows="10" class="codigo__campo-desktop"> Java</textarea>
+                        <!-- <textarea cols="60" rows="10" class="codigo__campo-desktop"> Java</textarea> -->
+                        <div class="codigo-wrapper-d codigo-wrapper codigo-wrapper-d-comunidade">
+                            <pre><code class="preview hljs" id="codigo__campo-desktop">public static void main (String args[]){}
+                            </code></pre>
+                        </div>
                     </div>
                     <h2 class="projeto">Projeto 2</h2>
                     <p class="projeto__comunidade">Código feito em Java</p>
@@ -229,10 +238,14 @@
                     <div class="card-projeto">
                         <div class="codigo-padrao codigo-rosa">
                             <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                            <textarea cols="60" rows="10" class="codigo__campo-desktop"> PHP</textarea>
+                            <!-- <textarea cols="60" rows="10" class="codigo__campo-desktop"> PHP</textarea> -->
+                            <div class="codigo-wrapper-d codigo-wrapper codigo-wrapper-d-comunidade">
+                                <pre><code class="preview hljs" id="codigo__campo-desktop"> .container__menu {display: flex; flex-direction: column;}
+                                </code></pre>
+                            </div>
                         </div>
                         <h2 class="projeto">Projeto 3</h2>
-                        <p class="projeto__comunidade">Código feito em PHP</p>
+                        <p class="projeto__comunidade">Código feito em CSS</p>
                         <div class="container__projeto">
                             <div class="projeto__likes">
                                 <div class="container-interacoes">
@@ -254,10 +267,14 @@
                     <div class="card-projeto">
                         <div class="codigo-padrao codigo-laranja">
                             <img src="img/mac_buttons.svg" alt="área de código" class="codigo__simbolo">
-                            <textarea cols="60" rows="10" class="codigo__campo-desktop"> C++</textarea>
+                            <!-- <textarea cols="60" rows="10" class="codigo__campo-desktop"> C++</textarea> -->
+                            <div class="codigo-wrapper-d codigo-wrapper-d-comunidade codigo-wrapper">
+                                <pre><code class="preview hljs" id="codigo__campo-desktop">def Teste()
+                                </code></pre>
+                            </div>
                         </div>
                         <h2 class="projeto">Projeto 4</h2>
-                        <p class="projeto__comunidade">Código feito em C++</p>
+                        <p class="projeto__comunidade">Código feito em Python</p>
                         <div class="container__projeto">
                             <div class="projeto__likes">
                                 <div class="container-interacoes">
@@ -278,6 +295,8 @@
             </div>
         </div>
     </div>
+    <script src="/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

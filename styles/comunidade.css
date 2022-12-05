@@ -93,4 +93,10 @@
     .card-projeto {
         background-color: rgba(0, 0, 0, 0.16);
     }
+    pre{
+        margin: 0;
+    }
+    .codigo-wrapper-d-comunidade {
+        width: 30vw;
+    }
 }
